@@ -9,13 +9,13 @@ export class Questions{
 export let arrayQuiz = [
     {
         question: 'Вопрос 1: Как звали первого российского императора?',
-        answerText: ["Пётр Первый", "Павел Первый", "Николай Первый", "Владимир Пеервый"],
+        answerText: ["Пётр Первый", "Павел Первый", "Николай Первый", "Владимир Первый"],
         correct: 0,
     },
     {
-        question: 'Second question',
-        answerText: ["Z", "X", "C", "V"],
-        correct: 0,
+        question: 'Вопрос 2: Какой был самый распростанённый цвет глаз у первобытных людей?',
+        answerText: ["Голубой", "Зелёный", "Карий", "Серый"],
+        correct: 2,
     },    
     {
         question: 'Third question',
