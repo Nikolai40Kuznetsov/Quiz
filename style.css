@@ -4,3 +4,137 @@
 #block3{
     display: none;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+#block1, #block2, #block3 {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+#block2, #block3 {
+    display: none;
+}
+
+h1 {
+    color: #1e3c72;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+#quest1 {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: #2a5298;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+button {
+    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.answer {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 15px auto;
+    text-align: left;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #4a76a8 0%, #3a6690 100%);
+}
+
+.answer:hover {
+    background: linear-gradient(135deg, #3a6690 0%, #2a5298 100%);
+}
+
+#score {
+    font-size: 1.5em;
+    color: #1e3c72;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+#start_but, #back {
+    font-size: 1.2em;
+    padding: 15px 40px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+@media (max-width: 768px) {
+    #block1, #block2, #block3 {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    #quest1 {
+        font-size: 1.1em;
+    }
+    
+    button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    
+    .answer {
+        padding: 12px 15px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#block1, #block2, #block3 {
+    animation: fadeIn 0.5s ease-out;
+}
